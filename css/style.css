@@ -37,4 +37,31 @@ img {
   background: #047aed;
   color: #fff;
   height: 5em;
+  /* border: 2px solid magenta; */
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto; /* fixes h1 overflow*/
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo,
+nav ul {
+  padding: 0 1em;
+}
+
+
+/* NAVBAR */
+
+nav li {
+  margin: 0 1em;
+}
+
+/* UTILITY CLASSES */
+
+.flex {
+  display: flex;
 }
