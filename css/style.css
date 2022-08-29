@@ -135,3 +135,69 @@ nav li {
 .stats {
   padding-top: 100px;
 }
+.stats-heading {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.stats .grid h3 {
+  font-size: 2.25rem;
+}
+
+.stats .grid p {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+/*  CLI  */
+.cli .grid {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0;
+}
+
+.cli .grid > *:first-child {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+
+/*  CLOUD  */
+.cloud .grid {
+  grid-template-columns: 4fr 3fr;
+}
+
+.cloud p {
+  margin-bottom: 2em;
+}
+
+/* Languages */
+.languages .flex {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.languages .card {
+  text-align: center;
+  margin: 18px 10px 40px;
+  padding: 3em;
+  transition: transform 0.3s ease-in;
+}
+
+.languages .card:hover {
+  transform: translateY(-15px);
+}
+
+.languages .card h4 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5em;
+}
+
+/*  Footer */
+.footer p, 
+.footer a {
+  color: #fff;
+}
+
+.footer .social a {
+  margin: 0 1em;
+}
