@@ -71,21 +71,94 @@ nav li {
 /* SHOWCASE */
 .showcase {
   background: var(--primary-color);
+  height: 400px;
   position: relative;
-  /* border: 1px solid magenta; */
+  padding-top: 3em;
 }
 
 .showcase h2 {
   font-size: 2rem;
 }
 
+.showcase p {
+  margin-bottom: 2.5em;
+}
+
 .showcase .grid {
   grid-template-columns: 55% 45%;
+  gap: 3em;
+  overflow: visible;
 }
+
+.showcase-form {
+  position: relative;
+  height: 350px;
+  width: 400px;
+  top: 60px;
+  z-index: 100;
+  justify-self: flex-end;
+  
+}
+
+/* Slant effect */
+.showcase::before, 
+.showcase::after {
+  content: 'yolo';
+  position: absolute;
+  height: 100px;
+  bottom: -70px;
+  right: 0;
+  left: 0;
+  background: white;
+  transform: skewY(-3deg);
+}
+
+/* Form elements */
+.showcase-form .form-control {
+  margin: 2em 0;
+}
+
+.showcase-form input[type='text'], 
+.showcase-form input[type='email'] {
+  padding: 0.5em 0;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #b4becb;
+  font-size: 1rem;
+}
+
+.showcase-form input:focus {
+  outline: none;
+}
+
 
 /* UTILITY CLASSES */
 :root {
   --primary-color: #047aed;
+}
+
+/* buttons */
+
+.btn {
+  border-radius: 5px;
+  background: var(--primary-color);
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid #fff;
+  padding: 1em 2.5em;
+}
+
+.btn-primary {
+  padding: 0.7em 2em;
+}
+
+.btn:hover {
+  transform: scale(1.1);
 }
 
 .container {
@@ -102,6 +175,17 @@ nav li {
 
 .grid {
   display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2em;
+  gap: 2.5em;
+}
+
+.card {
+  background: #fff;
+  color: #333;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  padding: 1em;
 }
