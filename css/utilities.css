@@ -1,10 +1,22 @@
 /* UTILITY CLASSES */
-:root {
-  --primary-color: #047aed;
-  --secondary-color: #1c3fa8;
-  --dark-color: #002240;
-  --light-color: #f4f4f4;
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1em;
+  /* overflow: auto; fixes h1 overflow */
+  /* border: 1px solid magenta; */
 }
+
+
+.card {
+  background: #fff;
+  color: #333;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  padding: 1em;
+}
+
 
 /* buttons */
 
@@ -29,32 +41,6 @@
 
 .btn:hover {
   transform: scale(1.1);
-}
-
-/* Backgrounds and coloured buttons */
-.bg-primary,
-.btn-primary {
-  background: var(--primary-color);
-  color: #fff;
-}
-
-.bg-secondary,
-.btn-secondary {
-  background: var(--secondary-color);
-  color: #fff;
-}
-
-.bg-dark,
-.btn-dark {
-  background: var(--dark-color);
-  color: #fff;
-  border: 1px solid #fff;
-}
-
-.bg-light,
-.btn-light {
-  background: var(--light-color);
-  color: #333;
 }
 
 /* Text Sizes */
@@ -82,21 +68,26 @@ font-size: 1.25rem;
   text-align: center;
 }
 
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 1em;
-  /* overflow: auto; fixes h1 overflow */
-  /* border: 1px solid magenta; */
+/* Alert */
+.alert {
+  background: var(--light-color);
+  padding: 0.5em;
+  font-weight: bold;
+  margin: 15px;
 }
 
+.alert i {
+  margin-right: 10px;
+}
 
-.card {
-  background: #fff;
-  color: #333;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  border-radius: 10px;
-  padding: 1em;
+.alert-success {
+  color: #fff;
+  background: var(--success-color);
+}
+
+.alert-error {
+  color: #fff;
+  background: var(--error-color);
 }
 
 .flex {
@@ -130,6 +121,32 @@ font-size: 1.25rem;
 
 .grid-col-span-3 {
   grid-column: 1 / span 3;
+}
+
+/* Backgrounds and coloured buttons */
+.bg-primary,
+.btn-primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.bg-secondary,
+.btn-secondary {
+  background: var(--secondary-color);
+  color: #fff;
+}
+
+.bg-dark,
+.btn-dark {
+  background: var(--dark-color);
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.bg-light,
+.btn-light {
+  background: var(--light-color);
+  color: #333;
 }
 
 /* MARGIN / PADDING */
