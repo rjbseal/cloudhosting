@@ -416,9 +416,12 @@ nav li {
     animation: slideInFromTop 0.5s ease-in;
   }
 
-  .showcase-text {
+  .showcase-text,
+  .features-head .container,
+  .docs-head .container {
     animation: fadeIn 1s ease-in;
   }
+
   .showcase-form {
     animation: slideInFromBottom 1s ease-in;
   }
