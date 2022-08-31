@@ -186,6 +186,7 @@ nav li {
 /*  CLOUD  */
 .cloud .grid {
   grid-template-columns: 4fr 3fr;
+  animation: slideInFromRight 1s ease-in;
 }
 
 .cloud p {
@@ -325,13 +326,18 @@ nav li {
   }
 }
 
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
 
 /* MEDIA QUERIES */
 
 /* Tablets and under */
 @media (max-width: 768px) {
 
-  .navbar nav {
+  .navbar nav,
+  .logo {
     animation: slideInFromTop 0.5s ease-in;
   }
 
@@ -408,5 +414,12 @@ nav li {
     padding: 0.7em;
     background-color: rgba(0, 0, 0, 0.1);
     animation: slideInFromTop 0.5s ease-in;
+  }
+
+  .showcase-text {
+    animation: fadeIn 1s ease-in;
+  }
+  .showcase-form {
+    animation: slideInFromBottom 1s ease-in;
   }
 }
